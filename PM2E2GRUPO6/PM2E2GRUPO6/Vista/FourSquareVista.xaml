@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E2GRUPO6.Vista.FourSquareVista">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button Text="Cargar Todo la Ubicacion" x:Name="btnStatics" Clicked="btnStatics_Clicked"/>
+            <Entry Placeholder="Ingrese Los Metros" x:Name="txtMetros" TextChanged="txtMetros_TextChanged" />
+            <Button Text="Cargar Datos por Metros" x:Name="btnmetros" Clicked="btnmetros_Clicked" />
+            <Button Text="Cargar Datos de una Ubicacion statica" x:Name="btnstatica" Clicked="btnstatica_Clicked"/>
+            
+            <ListView x:Name="lstFourSquare"  
+                      HasUnevenRows="True" 
+                      SeparatorVisibility="None" 
+                      ItemTapped="lstFourSquare_ItemTapped" HorizontalOptions="FillAndExpand" >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+
+                            <Frame CornerRadius="10" HasShadow="True">
+
+                                <SwipeView>
+                                    <SwipeView.RightItems>
+                                        <SwipeItem  Text="Ver mas"
+                                                        BackgroundColor="Blue"
+                                                        Invoked="VerDetalles" 
+                                                       />
+                                        <SwipeItem  Text="Ubicacion"
+                                                        BackgroundColor="Green"
+                                                        Invoked="SwipeItem_Invoked" 
+                                                       />
+                                       
+                                        
+                                    </SwipeView.RightItems>
+
+
+
+                                    <StackLayout Orientation="Horizontal"  BackgroundColor="White">
+
+                                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                                            <Label   Grid.Row="1" Grid.Column="0"  Margin="2" FontAttributes="Bold" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Distancia: "/>
+                                                        <Span  Text="{Binding distancia}"  />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+
+                                            <Label   Grid.Row="1" Grid.Column="0"  Margin="2" FontAttributes="Bold" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Nombre: "/>
+                                                        <Span  Text="{Binding nombre}"  />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+
+                                            <Label   Grid.Row="1" Grid.Column="0"  Margin="2" FontAttributes="Bold" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Direccion: "/>
+                                                        <Span  Text="{Binding direccion}"  />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+
+
+
+                                        </StackLayout>
+
+
+
+
+                                    </StackLayout>
+
+
+
+
+
+
+                                </SwipeView>
+
+                            </Frame>
+
+
+
+                         
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

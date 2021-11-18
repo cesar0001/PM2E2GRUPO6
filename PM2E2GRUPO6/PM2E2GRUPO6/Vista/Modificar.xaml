@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E2GRUPO6.Vista.Modificar" Title="Modificar Sitio">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout>
+
+                 
+                <Image x:Name="imagen" Source="perfil.jpg" HorizontalOptions="Center" HeightRequest="150" />
+
+                <Button Text="Tomar foto" x:Name="btnfotocap" Clicked="btnfotocap_Clicked" />
+                <Button Text="Tomar Foto Galeria" x:Name="btnCapturarFoto" Clicked="btnCapturarFoto_Clicked" />
+
+                <Label FontSize="18" FontAttributes="Bold" VerticalOptions="Center"  >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="ID Usuario: "/>
+                            <Span x:Name="lblId"  Text="1"  TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                 
+                <Label FontSize="18" FontAttributes="Bold" VerticalOptions="Center"  >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Latitud: "/>
+                            <Span x:Name="lbllatitud"  Text="15.0"  TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label FontSize="18" FontAttributes="Bold" VerticalOptions="Center"  >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Latitud: "/>
+                            <Span x:Name="lbllongitud"  Text="15.0"  TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Editor IsTextPredictionEnabled="false" IsSpellCheckEnabled="false" x:Name="txtdescripLarga" Placeholder="Escriba la ubicacion" MaxLength="190" HeightRequest="100"   />
+
+                <Button Text="Modificar Ubicacion" x:Name="btnsalnvar" Clicked="btnsalnvar_Clicked" />
+ 
+            </StackLayout>
+
+        </ScrollView>
+
+
+    </ContentPage.Content>
+</ContentPage>

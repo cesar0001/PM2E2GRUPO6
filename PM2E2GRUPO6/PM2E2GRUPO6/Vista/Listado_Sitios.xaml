@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E2GRUPO6.Vista.Listado_Sitios" Title="Lista de Sitios">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Seleccione la fila con presion muevala hacia la izquierda." />
+            <ListView x:Name="listas"  HasUnevenRows="True" SeparatorVisibility="None" ItemTapped="listas_ItemTapped"   >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell  >
+
+                            <Grid Padding="10" >
+
+                                <Frame CornerRadius="10" HasShadow="True">
+
+                                    <SwipeView>
+                                        <SwipeView.RightItems>
+                                            <SwipeItem  Text="Modificar"
+                                                        BackgroundColor="Blue"
+                                                        Invoked="VerDetalles" 
+                                                       />
+                                            <SwipeItem  Text="Eliminar"
+                                                        BackgroundColor="Red"
+                                                        Invoked="SwipeItem_Invoked" 
+                                                       />
+                                            <SwipeItem  Text="FourSquare"
+                                                        BackgroundColor="Green"
+                                                        Invoked="SwipeItem_Invoked_1" 
+                                                       />
+                                            <SwipeItem  Text="Ver Mapa"
+                                                        BackgroundColor="Yellow"
+                                                        Invoked="SwipeItem_Invoked_2"
+                                                       />
+                                        </SwipeView.RightItems>
+                                        
+                                         
+
+
+
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+
+                                            <Image  Grid.RowSpan="2" Source="{Binding fotografia}"   
+                                        HeightRequest="60" WidthRequest="60"/>
+
+                                            <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+
+                                                <Label   Grid.Row="1" Grid.Column="0"  Margin="2" FontAttributes="Bold" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="Descripcion: "/>
+                                                            <Span  Text="{Binding descripcion}"  />
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                                
+                                                
+
+                                            </StackLayout>
+
+                                            <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                                                <Label Text=">" FontSize="20"/>
+                                            </StackLayout>
+
+
+                                        </StackLayout>
+
+
+
+                                    </SwipeView>
+
+                                </Frame>
+
+
+
+                            </Grid>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

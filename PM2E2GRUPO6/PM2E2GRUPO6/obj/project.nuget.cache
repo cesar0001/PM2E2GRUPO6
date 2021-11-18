@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Nt7NkQAU3QevYjsvyUi0Ms+Fi2GKFncNOCU7xZ6M9sBDiWZFgwj1oucCiz7ABgmb0IwJu2m0aTUXn7c9Nn2OPg==",
+  "success": true,
+  "projectFilePath": "C:\\Programacion Movil 2\\Primer Parcial\\PM2E2GRUPO6\\PM2E2GRUPO6\\PM2E2GRUPO6\\PM2E2GRUPO6.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MET\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\MET\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\MET\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\MET\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\MET\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\MET\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\MET\\.nuget\\packages\\xamarin.forms\\5.0.0.2244\\xamarin.forms.5.0.0.2244.nupkg.sha512"
+  ],
+  "logs": []
+}
