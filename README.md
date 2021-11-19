@@ -8,7 +8,7 @@ Integrantes del Grupo 6
 * Marlon Giron (201820010222)
 * Juan Paz (201410010078)
 * Joel Turcios (200610520037)
-* vivi vargas (201710110052)
+* vivian vargas (201710110052)
 * jairo perdomo (201910110022)
 
  No se coloco el nombre y numero de cuenta de todos en el commit por que es muy largo
