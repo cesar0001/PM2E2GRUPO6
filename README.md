@@ -11,5 +11,5 @@ Integrantes del Grupo 6
 * vivi vargas (201710110052)
 * jairo perdomo (201910110022)
 
-* No se coloco el nombre y numero de cuenta de todos en el commit por que es muy largo
+ No se coloco el nombre y numero de cuenta de todos en el commit por que es muy largo
 El Nombre del proyeto es PM2E2GRUPO6 refiriendose al grupo 6 pero por el  archivo work pero nos toco participar como equipo 4
